@@ -80,6 +80,7 @@ extension AccountListViewController: AccountListDelegate {
         cell.setupBankTitle(title: bankingInfo[indexPath.row].account_name)
         cell.setupActivity(activity: bankingInfo[indexPath.row].desc)
 //        cell.setupAccount(account: bankingInfo[indexPath.row].account_type)
+
                            
         return cell
     }

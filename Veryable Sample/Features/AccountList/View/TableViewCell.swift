@@ -12,47 +12,106 @@ class AccountCell: UITableViewCell {
     let titleLabel = UILabel()
     let accountLabel = UILabel()
     let activityLabel = UILabel()
+    let icon = UIImageView()
+    let expandButton = UIButton()
     let title: String = ""
     let account: String = ""
     let activity: String = ""
     let darkColor = VGrey.dark.color
     let lightColor = VGrey.light.color
+    let darkBlue = VBlue.dark.color
+    let stackView = UIStackView()
+    let bankDetailSV = UIStackView()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupBankTitle(title: "")
         setupAccount(account: "")
         setupActivity(activity: "")
+        setupIcon()
+        setupExpandButton()
+        setupSV()
+        configureSV()
+        configureBankDetailSV()
+        setupBankDetailSV()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    //MARK: Horizontal SV
+    func configureSV() {
+        addSubview(stackView)
+        stackView.axis = .horizontal
+        stackView.distribution = .fillProportionally
+        stackView.spacing = 10
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        stackView.leftAnchor.constraint(equalTo: leftAnchor, constant: 15).isActive = true
+        stackView.rightAnchor.constraint(equalTo: rightAnchor, constant: -15).isActive = true
+        stackView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+    }
+    
+    func setupSV() {
+        stackView.addArrangedSubview(icon)
+        stackView.addArrangedSubview(bankDetailSV)
+        stackView.addArrangedSubview(expandButton)
+    }
+    
+    //MARK:  Bank Details SV
+    func configureBankDetailSV() {
+        bankDetailSV.axis = .vertical
+        bankDetailSV.spacing = 5
+        bankDetailSV.translatesAutoresizingMaskIntoConstraints = false
+        bankDetailSV.topAnchor.constraint(equalTo: topAnchor, constant: 5).isActive = true
+        bankDetailSV.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5).isActive = true 
+        bankDetailSV.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        bankDetailSV.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+    }
+    
+    func setupBankDetailSV() {
+        bankDetailSV.addArrangedSubview(titleLabel)
+        bankDetailSV.addArrangedSubview(accountLabel)
+        bankDetailSV.addArrangedSubview(activityLabel)
+    }
+    
+    //MARK: Setups
+    
+    func setupIcon() {
+        icon.image = UIImage(named: "bank")?.withRenderingMode(.alwaysTemplate)
+        icon.tintColor = darkBlue
+        icon.translatesAutoresizingMaskIntoConstraints = false
+        icon.widthAnchor.constraint(equalToConstant: 25).isActive = true
+        icon.heightAnchor.constraint(equalToConstant: 25).isActive = true
+    }
+    
+    func setupExpandButton() {
+        let image = UIImage(named: "arrow")?.withRenderingMode(.alwaysTemplate)
+        expandButton.tintColor = .darkGray
+        expandButton.setImage(image, for: .normal)
+        expandButton.translatesAutoresizingMaskIntoConstraints = false
+        expandButton.widthAnchor.constraint(equalToConstant: 40).isActive = true
+    }
+    // MARK: Bank Details
     
     func setupBankTitle(title: String) {
-      addSubview(titleLabel)
         titleLabel.font = .vryAvenirNextDemiBold(14)
         titleLabel.textColor = darkColor
         titleLabel.text = title
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
     }
     
     func setupAccount(account: String) {
-        addSubview(accountLabel)
         accountLabel.font = .vryAvenirNextRegular(12)
         accountLabel.textColor = darkColor
         accountLabel.text = account
         accountLabel.translatesAutoresizingMaskIntoConstraints = false
-        accountLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor).isActive = true
     }
     
     func setupActivity(activity: String) {
-        addSubview(activityLabel)
         activityLabel.font = .vryAvenirNextRegular(12)
         activityLabel.textColor = lightColor
         activityLabel.text = activity
         activityLabel.translatesAutoresizingMaskIntoConstraints = false
-        activityLabel.topAnchor.constraint(equalTo: accountLabel.bottomAnchor).isActive = true
     }
 }
