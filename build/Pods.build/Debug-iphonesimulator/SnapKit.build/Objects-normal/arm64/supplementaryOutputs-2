@@ -1,0 +1,25 @@
+"/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/Pods/SnapKit/Source/ConstraintDSL.swift":
+  diagnostics: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintDSL.dia"
+  object: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintDSL.o"
+  dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintDSL.d"
+  swift-dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintDSL.swiftdeps"
+"/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/Pods/SnapKit/Source/ConstraintDirectionalInsets.swift":
+  swift-dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintDirectionalInsets.swiftdeps"
+  object: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintDirectionalInsets.o"
+  diagnostics: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintDirectionalInsets.dia"
+  dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintDirectionalInsets.d"
+"/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/Pods/SnapKit/Source/ConstraintInsets.swift":
+  dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintInsets.d"
+  diagnostics: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintInsets.dia"
+  swift-dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintInsets.swiftdeps"
+  object: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintInsets.o"
+"/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/Pods/SnapKit/Source/ConstraintInsetTarget.swift":
+  diagnostics: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintInsetTarget.dia"
+  dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintInsetTarget.d"
+  swift-dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintInsetTarget.swiftdeps"
+  object: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintInsetTarget.o"
+"/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/Pods/SnapKit/Source/ConstraintDirectionalInsetTarget.swift":
+  swift-dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintDirectionalInsetTarget.swiftdeps"
+  object: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintDirectionalInsetTarget.o"
+  dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintDirectionalInsetTarget.d"
+  diagnostics: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintDirectionalInsetTarget.dia"

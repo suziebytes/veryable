@@ -1,0 +1,14 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Debug-iphonesimulator/SnapKit/SnapKit.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/unextended-module.modulemap",
+    }]
+  }]
+}

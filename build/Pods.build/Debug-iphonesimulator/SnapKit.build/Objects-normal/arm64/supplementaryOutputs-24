@@ -1,0 +1,20 @@
+"/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/Pods/SnapKit/Source/Typealiases.swift":
+  object: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/Typealiases.o"
+  dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/Typealiases.d"
+  swift-dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/Typealiases.swiftdeps"
+  diagnostics: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/Typealiases.dia"
+"/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/Pods/SnapKit/Source/LayoutConstraintItem.swift":
+  object: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/LayoutConstraintItem.o"
+  diagnostics: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/LayoutConstraintItem.dia"
+  dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/LayoutConstraintItem.d"
+  swift-dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/LayoutConstraintItem.swiftdeps"
+"/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/Pods/SnapKit/Source/LayoutConstraint.swift":
+  object: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/LayoutConstraint.o"
+  dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/LayoutConstraint.d"
+  swift-dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/LayoutConstraint.swiftdeps"
+  diagnostics: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/LayoutConstraint.dia"
+"/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/Pods/SnapKit/Source/UILayoutSupport+Extensions.swift":
+  dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/UILayoutSupport+Extensions.d"
+  object: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/UILayoutSupport+Extensions.o"
+  swift-dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/UILayoutSupport+Extensions.swiftdeps"
+  diagnostics: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/UILayoutSupport+Extensions.dia"

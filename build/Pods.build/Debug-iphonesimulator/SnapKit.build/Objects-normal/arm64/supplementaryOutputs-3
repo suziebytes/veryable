@@ -1,0 +1,25 @@
+"/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/Pods/SnapKit/Source/ConstraintLayoutGuide.swift":
+  diagnostics: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintLayoutGuide.dia"
+  swift-dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintLayoutGuide.swiftdeps"
+  dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintLayoutGuide.d"
+  object: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintLayoutGuide.o"
+"/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/Pods/SnapKit/Source/ConstraintLayoutGuide+Extensions.swift":
+  dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintLayoutGuide+Extensions.d"
+  diagnostics: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintLayoutGuide+Extensions.dia"
+  swift-dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintLayoutGuide+Extensions.swiftdeps"
+  object: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintLayoutGuide+Extensions.o"
+"/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/Pods/SnapKit/Source/ConstraintLayoutSupport.swift":
+  dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintLayoutSupport.d"
+  swift-dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintLayoutSupport.swiftdeps"
+  object: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintLayoutSupport.o"
+  diagnostics: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintLayoutSupport.dia"
+"/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/Pods/SnapKit/Source/ConstraintItem.swift":
+  diagnostics: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintItem.dia"
+  swift-dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintItem.swiftdeps"
+  dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintItem.d"
+  object: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintItem.o"
+"/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/Pods/SnapKit/Source/ConstraintLayoutGuideDSL.swift":
+  object: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintLayoutGuideDSL.o"
+  swift-dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintLayoutGuideDSL.swiftdeps"
+  diagnostics: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintLayoutGuideDSL.dia"
+  dependencies: "/Users/suzie/Downloads/Veryable-Coding-Challenge-master/Base-Project/build/Pods.build/Debug-iphonesimulator/SnapKit.build/Objects-normal/arm64/ConstraintLayoutGuideDSL.d"

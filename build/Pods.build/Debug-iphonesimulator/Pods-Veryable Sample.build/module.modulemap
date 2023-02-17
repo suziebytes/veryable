@@ -1,0 +1,6 @@
+framework module Pods_Veryable_Sample {
+  umbrella header "Pods-Veryable Sample-umbrella.h"
+
+  export *
+  module * { export * }
+}

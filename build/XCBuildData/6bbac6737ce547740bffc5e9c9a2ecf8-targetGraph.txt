@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+SnapKit in Pods, no dependencies
+Pods-Veryable Sample in Pods, depends on:
+SnapKit in Pods (explicit)
