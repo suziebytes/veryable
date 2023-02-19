@@ -14,6 +14,8 @@ class AccountCell: UITableViewCell {
     let activityLabel = UILabel()
     let icon = UIImageView()
     let expandButton = UIButton()
+    let buttonContainer = UIView()
+    let iconContainer = UIView()
     let title: String = ""
     let account: String = ""
     let activity: String = ""
@@ -28,6 +30,8 @@ class AccountCell: UITableViewCell {
         setupBankTitle(title: "")
         setupAccount(account: "")
         setupActivity(activity: "")
+        setupIconContainer()
+        setupButtonContainer()
         setupIcon()
         setupExpandButton()
         setupSV()
@@ -47,15 +51,15 @@ class AccountCell: UITableViewCell {
         stackView.spacing = 10
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        stackView.leftAnchor.constraint(equalTo: leftAnchor, constant: 15).isActive = true
-        stackView.rightAnchor.constraint(equalTo: rightAnchor, constant: -15).isActive = true
+        stackView.leftAnchor.constraint(equalTo: leftAnchor, constant: 10).isActive = true
+        stackView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
         stackView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
     }
     
     func setupSV() {
-        stackView.addArrangedSubview(icon)
+        stackView.addArrangedSubview(iconContainer)
         stackView.addArrangedSubview(bankDetailSV)
-        stackView.addArrangedSubview(expandButton)
+        stackView.addArrangedSubview(buttonContainer)
     }
     
     //MARK:  Bank Details SV
@@ -64,7 +68,7 @@ class AccountCell: UITableViewCell {
         bankDetailSV.spacing = 5
         bankDetailSV.translatesAutoresizingMaskIntoConstraints = false
         bankDetailSV.topAnchor.constraint(equalTo: topAnchor, constant: 5).isActive = true
-        bankDetailSV.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5).isActive = true 
+        bankDetailSV.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5).isActive = true
         bankDetailSV.widthAnchor.constraint(equalToConstant: 200).isActive = true
         bankDetailSV.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
     }
@@ -75,25 +79,42 @@ class AccountCell: UITableViewCell {
         bankDetailSV.addArrangedSubview(activityLabel)
     }
     
-    //MARK: Setups
+    //MARK: Containers
+    func setupButtonContainer() {
+        buttonContainer.translatesAutoresizingMaskIntoConstraints = false
+    }
     
+    func setupIconContainer() {
+        iconContainer.translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    //MARK: Setups
     func setupIcon() {
+        iconContainer.addSubview(icon)
         icon.image = UIImage(named: "bank")?.withRenderingMode(.alwaysTemplate)
         icon.tintColor = darkBlue
         icon.translatesAutoresizingMaskIntoConstraints = false
-        icon.widthAnchor.constraint(equalToConstant: 25).isActive = true
-        icon.heightAnchor.constraint(equalToConstant: 25).isActive = true
+        icon.widthAnchor.constraint(equalToConstant: 30).isActive = true
+        icon.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        icon.topAnchor.constraint(equalTo: iconContainer.topAnchor, constant: 10).isActive = true
+        icon.bottomAnchor.constraint(equalTo: iconContainer.bottomAnchor, constant: -30).isActive = true
+        icon.leftAnchor.constraint(equalTo: iconContainer.leftAnchor).isActive = true
+        icon.rightAnchor.constraint(equalTo: iconContainer.rightAnchor, constant: -20).isActive = true
     }
     
     func setupExpandButton() {
+        buttonContainer.addSubview(expandButton)
         let image = UIImage(named: "arrow")?.withRenderingMode(.alwaysTemplate)
         expandButton.tintColor = .darkGray
         expandButton.setImage(image, for: .normal)
         expandButton.translatesAutoresizingMaskIntoConstraints = false
         expandButton.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        expandButton.topAnchor.constraint(equalTo: buttonContainer.topAnchor, constant: 20).isActive = true
+        expandButton.bottomAnchor.constraint(equalTo: buttonContainer.bottomAnchor, constant: -20).isActive = true
+        expandButton.leftAnchor.constraint(equalTo: buttonContainer.leftAnchor, constant: 30).isActive = true
+        expandButton.rightAnchor.constraint(equalTo: buttonContainer.rightAnchor).isActive = true
     }
     // MARK: Bank Details
-    
     func setupBankTitle(title: String) {
         titleLabel.font = .vryAvenirNextDemiBold(14)
         titleLabel.textColor = darkColor
