@@ -51,7 +51,7 @@ class AccountCell: UITableViewCell {
         stackView.spacing = 10
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        stackView.leftAnchor.constraint(equalTo: leftAnchor, constant: 10).isActive = true
+        stackView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         stackView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
         stackView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
     }
@@ -69,8 +69,6 @@ class AccountCell: UITableViewCell {
         bankDetailSV.translatesAutoresizingMaskIntoConstraints = false
         bankDetailSV.topAnchor.constraint(equalTo: topAnchor, constant: 5).isActive = true
         bankDetailSV.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5).isActive = true
-        bankDetailSV.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        bankDetailSV.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
     }
     
     func setupBankDetailSV() {
@@ -82,10 +80,12 @@ class AccountCell: UITableViewCell {
     //MARK: Containers
     func setupButtonContainer() {
         buttonContainer.translatesAutoresizingMaskIntoConstraints = false
+        buttonContainer.widthAnchor.constraint(equalToConstant: 25).isActive = true
     }
     
     func setupIconContainer() {
         iconContainer.translatesAutoresizingMaskIntoConstraints = false
+        iconContainer.widthAnchor.constraint(equalToConstant: 50).isActive = true
     }
     
     //MARK: Setups
@@ -94,12 +94,11 @@ class AccountCell: UITableViewCell {
         icon.image = UIImage(named: "bank")?.withRenderingMode(.alwaysTemplate)
         icon.tintColor = darkBlue
         icon.translatesAutoresizingMaskIntoConstraints = false
-        icon.widthAnchor.constraint(equalToConstant: 30).isActive = true
-        icon.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        icon.widthAnchor.constraint(equalToConstant: 25).isActive = true
+        icon.heightAnchor.constraint(equalToConstant: 25).isActive = true
+        icon.centerXAnchor.constraint(equalTo: iconContainer.centerXAnchor).isActive = true
+//        icon.centerYAnchor.constraint(equalTo: iconContainer.centerYAnchor).isActive = true
         icon.topAnchor.constraint(equalTo: iconContainer.topAnchor, constant: 10).isActive = true
-        icon.bottomAnchor.constraint(equalTo: iconContainer.bottomAnchor, constant: -30).isActive = true
-        icon.leftAnchor.constraint(equalTo: iconContainer.leftAnchor).isActive = true
-        icon.rightAnchor.constraint(equalTo: iconContainer.rightAnchor, constant: -20).isActive = true
     }
     
     func setupExpandButton() {
@@ -108,11 +107,10 @@ class AccountCell: UITableViewCell {
         expandButton.tintColor = .darkGray
         expandButton.setImage(image, for: .normal)
         expandButton.translatesAutoresizingMaskIntoConstraints = false
-        expandButton.widthAnchor.constraint(equalToConstant: 40).isActive = true
-        expandButton.topAnchor.constraint(equalTo: buttonContainer.topAnchor, constant: 20).isActive = true
-        expandButton.bottomAnchor.constraint(equalTo: buttonContainer.bottomAnchor, constant: -20).isActive = true
-        expandButton.leftAnchor.constraint(equalTo: buttonContainer.leftAnchor, constant: 30).isActive = true
-        expandButton.rightAnchor.constraint(equalTo: buttonContainer.rightAnchor).isActive = true
+        expandButton.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        expandButton.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        expandButton.centerXAnchor.constraint(equalTo: buttonContainer.centerXAnchor).isActive = true
+        expandButton.centerYAnchor.constraint(equalTo: buttonContainer.centerYAnchor).isActive = true
     }
     // MARK: Bank Details
     func setupBankTitle(title: String) {
