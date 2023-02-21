@@ -32,7 +32,7 @@ class AccountCell: UITableViewCell {
         setupActivity(activity: "")
         setupIconContainer()
         setupButtonContainer()
-        setupIcon()
+        setupIcon(iconName: "")
         setupExpandButton()
         setupSV()
         configureSV()
@@ -90,9 +90,9 @@ class AccountCell: UITableViewCell {
     }
     
     //MARK: Setups
-    func setupIcon() {
+    func setupIcon(iconName: String) {
         iconContainer.addSubview(icon)
-        icon.image = UIImage(named: "bank")?.withRenderingMode(.alwaysTemplate)
+        icon.image = UIImage(named: iconName)?.withRenderingMode(.alwaysTemplate)
         icon.tintColor = darkBlue
         icon.translatesAutoresizingMaskIntoConstraints = false
         icon.widthAnchor.constraint(equalToConstant: 25).isActive = true

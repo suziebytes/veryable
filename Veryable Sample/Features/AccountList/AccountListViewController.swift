@@ -34,7 +34,7 @@ class AccountListViewController: UIViewController, UITableViewDelegate,  UITable
     //MARK: Overrides
     override func viewDidLoad() {
         setupTV()
-     
+        
         fetchData.fetchBankingInfo {
             // This closure will be called after the data has been fetched and bankingInfo has been updated
             // Reload tableview or update UI with fetched data
@@ -124,11 +124,13 @@ extension AccountListViewController: AccountListDelegate {
         //        cell.setupAccount(account: bankingInfo[indexPath.row].account_type)
         switch (indexPath.section)  {
         case 0: //Bank Account
+            cell.setupIcon(iconName: "bank")
             cell.setupBankTitle(title: bankAccountData[indexPath.row].account_name)
             cell.setupActivity(activity: bankAccountData[indexPath.row].desc)
             cell.setupAccount(account: "Bank Acount: ACH - Same Day")
             
         case 1: //Card
+            cell.setupIcon(iconName: "card")
             cell.setupBankTitle(title: cardData[indexPath.row].account_name)
             cell.setupActivity(activity: cardData[indexPath.row].desc)
             cell.setupAccount(account: "Card: Instant")
@@ -141,8 +143,36 @@ extension AccountListViewController: AccountListDelegate {
     //MARK: Handle Selection Event
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailView = DetailViewController()
+        var icon = ""
+        var accountLabel = ""
+        var detailsLabel = ""
+        
+        switch (indexPath.section) {
+        case 0:
+            //store the data
+            icon = "bank"
+            accountLabel = bankAccountData[indexPath.row].account_name
+            detailsLabel = bankAccountData[indexPath.row].desc
+            
+            // assign to detail view
+            detailView.iconName = icon
+            detailView.accountLabelText = accountLabel
+            detailView.detailsLabelText = detailsLabel
+        case 1:
+            icon = "card"
+            accountLabel = cardData[indexPath.row].account_name
+            detailsLabel = cardData[indexPath.row].desc
+            
+            detailView.iconName = icon
+            detailView.accountLabelText = accountLabel
+            detailView.detailsLabelText = detailsLabel
+        default:
+            break
+        }
         navigationController?.pushViewController(detailView, animated: true)
     }
+    
+    //MARK: TV Styling
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80

@@ -14,6 +14,9 @@ class DetailViewController: UIViewController {
     let iconView = UIImageView()
     let accountLabel = UILabel()
     let detailsLabel = UILabel()
+    var accountLabelText = ""
+    var detailsLabelText = ""
+    var iconName = ""
     let darkBlue =  VBlue.dark.color
     let darkColor = VGrey.dark.color
     let lightColor = VGrey.light.color
@@ -41,21 +44,20 @@ class DetailViewController: UIViewController {
     
     func setupIcon() {
         view.addSubview(iconView)
-        iconView.image = UIImage(named: "card")?.withRenderingMode(.alwaysTemplate)
+        iconView.image = UIImage(named: iconName)?.withRenderingMode(.alwaysTemplate)
         iconView.tintColor = darkBlue
         iconView.translatesAutoresizingMaskIntoConstraints = false
         iconView.widthAnchor.constraint(equalToConstant: 100).isActive = true
         iconView.heightAnchor.constraint(equalToConstant: 100).isActive = true
         iconView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         iconView.topAnchor.constraint(equalTo: view.topAnchor, constant: 150).isActive = true
-        //        iconView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -350).isActive = true
     }
     
     func setupAccount() {
         view.addSubview(accountLabel)
         accountLabel.font = .vryAvenirNextDemiBold(16)
         accountLabel.textColor = darkColor
-        accountLabel.text = "WF Checking Account"
+        accountLabel.text = accountLabelText
         accountLabel.translatesAutoresizingMaskIntoConstraints = false
         accountLabel.topAnchor.constraint(equalTo: iconView.bottomAnchor, constant: 20).isActive = true
         accountLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -65,7 +67,7 @@ class DetailViewController: UIViewController {
         view.addSubview(detailsLabel)
         detailsLabel.font = .vryAvenirNextRegular(14)
         detailsLabel.textColor = darkColor
-        detailsLabel.text = "Wells Fargo (x24342)"
+        detailsLabel.text = detailsLabelText
         detailsLabel.translatesAutoresizingMaskIntoConstraints = false
         detailsLabel.topAnchor.constraint(equalTo: accountLabel.bottomAnchor, constant: 5).isActive = true
         detailsLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
