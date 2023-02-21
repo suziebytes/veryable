@@ -73,8 +73,8 @@ class AccountCell: UITableViewCell {
     
     func setupBankDetailSV() {
         bankDetailSV.addArrangedSubview(titleLabel)
-        bankDetailSV.addArrangedSubview(accountLabel)
         bankDetailSV.addArrangedSubview(activityLabel)
+        bankDetailSV.addArrangedSubview(accountLabel)
     }
     
     //MARK: Containers
@@ -120,17 +120,17 @@ class AccountCell: UITableViewCell {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
     }
     
-    func setupAccount(account: String) {
-        accountLabel.font = .vryAvenirNextRegular(12)
-        accountLabel.textColor = darkColor
-        accountLabel.text = account
-        accountLabel.translatesAutoresizingMaskIntoConstraints = false
-    }
-    
     func setupActivity(activity: String) {
         activityLabel.font = .vryAvenirNextRegular(12)
-        activityLabel.textColor = lightColor
+        activityLabel.textColor = darkColor
         activityLabel.text = activity
         activityLabel.translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    func setupAccount(account: String) {
+        accountLabel.font = .vryAvenirNextRegular(12)
+        accountLabel.textColor = lightColor
+        accountLabel.text = account
+        accountLabel.translatesAutoresizingMaskIntoConstraints = false
     }
 }

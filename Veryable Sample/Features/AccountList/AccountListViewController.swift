@@ -19,8 +19,8 @@ class AccountListViewController: UIViewController, UITableViewDelegate,  UITable
     var bankingInfo: [Account] = []
     let lightGray = VGrey.light.color
     let headerTitles = ["Bank Accounts", "Card"]
-    var bankAccountData: Array = [""]
-    var cardData: Array = [""]
+    var bankAccountData: [Account] = []
+    var cardData: [Account] = []
     
     //MARK: Public API
     
@@ -34,11 +34,13 @@ class AccountListViewController: UIViewController, UITableViewDelegate,  UITable
     //MARK: Overrides
     override func viewDidLoad() {
         setupTV()
+     
         fetchData.fetchBankingInfo {
             // This closure will be called after the data has been fetched and bankingInfo has been updated
             // Reload tableview or update UI with fetched data
             self.count = self.fetchData.bankingInfo.count
             self.bankingInfo = self.fetchData.bankingInfo
+            self.filterData()
             self.tableView.reloadData() // tableview will call all tableView funcs again
         }
     }
@@ -77,6 +79,10 @@ extension AccountListViewController: AccountListDelegate {
         })
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
         let label = UILabel()
@@ -100,10 +106,6 @@ extension AccountListViewController: AccountListDelegate {
         return headerView
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return bankAccountData.count
@@ -111,28 +113,23 @@ extension AccountListViewController: AccountListDelegate {
         if section == 1 {
             return cardData.count
         }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // 2
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! AccountCell
         
-        //
-        //        cell.setupBankTitle(title: bankingInfo[indexPath.row].account_name)
-        //        cell.setupActivity(activity: bankingInfo[indexPath.row].desc)
         //        cell.setupAccount(account: bankingInfo[indexPath.row].account_type)
-        
-        
-        
         switch (indexPath.section)  {
         case 0: //Bank Account
-            cell.setupBankTitle(title: bankingInfo[indexPath.row].account_name)
-            cell.setupActivity(activity: bankingInfo[indexPath.row].desc)
+            cell.setupBankTitle(title: bankAccountData[indexPath.row].account_name)
+            cell.setupActivity(activity: bankAccountData[indexPath.row].desc)
+            cell.setupAccount(account: "Bank Acount: ACH - Same Day")
             
         case 1: //Card
-            cell.setupBankTitle(title: bankingInfo[indexPath.row].account_name)
-            cell.setupActivity(activity: bankingInfo[indexPath.row].desc)
-            
+            cell.setupBankTitle(title: cardData[indexPath.row].account_name)
+            cell.setupActivity(activity: cardData[indexPath.row].desc)
+            cell.setupAccount(account: "Card: Instant")
         default:
             break
         }
@@ -141,6 +138,6 @@ extension AccountListViewController: AccountListDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 100
     }
 }
