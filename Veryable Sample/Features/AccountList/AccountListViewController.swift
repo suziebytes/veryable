@@ -42,6 +42,8 @@ class AccountListViewController: UIViewController, UITableViewDelegate,  UITable
             self.bankingInfo = self.fetchData.bankingInfo
             self.filterData()
             self.tableView.reloadData() // tableview will call all tableView funcs again
+            
+            self.navigationItem.backButtonTitle = ""
         }
     }
     

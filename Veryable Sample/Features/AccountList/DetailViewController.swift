@@ -25,12 +25,16 @@ class DetailViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
         self.title = "DETAILS".uppercased()
     }
+    
     required init?(coder: NSCoder) { nil }
     
     //MARK: Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.navigationBar.backgroundColor = .white
+        self.navigationController?.navigationBar.tintColor = darkColor
+        
         view.backgroundColor = ViewColor.background.color
         setupIcon()
         setupAccount()

@@ -98,7 +98,6 @@ class AccountCell: UITableViewCell {
         icon.widthAnchor.constraint(equalToConstant: 25).isActive = true
         icon.heightAnchor.constraint(equalToConstant: 25).isActive = true
         icon.centerXAnchor.constraint(equalTo: iconContainer.centerXAnchor).isActive = true
-//        icon.centerYAnchor.constraint(equalTo: iconContainer.centerYAnchor).isActive = true
         icon.topAnchor.constraint(equalTo: iconContainer.topAnchor, constant: 10).isActive = true
     }
     
