@@ -65,7 +65,8 @@ class AccountCell: UITableViewCell {
     //MARK:  Bank Details SV
     func configureBankDetailSV() {
         bankDetailSV.axis = .vertical
-        bankDetailSV.spacing = 5
+        bankDetailSV.distribution = .fillProportionally
+        bankDetailSV.spacing = 0
         bankDetailSV.translatesAutoresizingMaskIntoConstraints = false
         bankDetailSV.topAnchor.constraint(equalTo: topAnchor, constant: 5).isActive = true
         bankDetailSV.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5).isActive = true

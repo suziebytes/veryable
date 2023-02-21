@@ -21,7 +21,6 @@
 		B0D3EDA7299D628F007C1ADF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D3EDA6299D628F007C1ADF /* DetailViewController.swift */; };
 		B0D3EDA9299D638E007C1ADF /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D3EDA8299D638E007C1ADF /* ButtonView.swift */; };
 		B0D3EDAF299ED083007C1ADF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D3EDAE299ED083007C1ADF /* TableViewCell.swift */; };
-		B0D3EDB1299EDFEC007C1ADF /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D3EDB0299EDFEC007C1ADF /* Accounts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +40,6 @@
 		B0D3EDA6299D628F007C1ADF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B0D3EDA8299D638E007C1ADF /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		B0D3EDAE299ED083007C1ADF /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		B0D3EDB0299EDFEC007C1ADF /* Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
 		B65FE61971F35C89FD901862 /* Pods-Veryable Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Veryable Sample.release.xcconfig"; path = "Target Support Files/Pods-Veryable Sample/Pods-Veryable Sample.release.xcconfig"; sourceTree = "<group>"; };
 		CDFCC6589E8234DDBAFB6174 /* Pods_Veryable_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Veryable_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -130,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				6A948AED265FF0E5005A22DA /* Account.swift */,
-				B0D3EDB0299EDFEC007C1ADF /* Accounts.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -304,7 +301,6 @@
 			files = (
 				6A948AF8265FF403005A22DA /* VColor.swift in Sources */,
 				515EC6B3242E5FBA00B21DBB /* AppDelegate.swift in Sources */,
-				B0D3EDB1299EDFEC007C1ADF /* Accounts.swift in Sources */,
 				6A948AE5265FEFCB005A22DA /* AccountListViewController.swift in Sources */,
 				B0D3EDA7299D628F007C1ADF /* DetailViewController.swift in Sources */,
 				6A948B01265FF5CA005A22DA /* ViewColor.swift in Sources */,

@@ -79,6 +79,7 @@ extension AccountListViewController: AccountListDelegate {
         })
     }
     
+    //MARK: Setup TV Sections
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
@@ -87,7 +88,7 @@ extension AccountListViewController: AccountListDelegate {
         let headerView = UIView()
         let label = UILabel()
         
-        headerView.backgroundColor = lightGray
+        headerView.backgroundColor = ViewColor.background.color
         //        headerView.translatesAutoresizingMaskIntoConstraints = false
         headerView.heightAnchor.constraint(equalToConstant: 50).isActive = true
         label.font = .vryAvenirNextDemiBold(16)
@@ -116,6 +117,7 @@ extension AccountListViewController: AccountListDelegate {
         return 0
     }
     
+    //MARK: Populate Cell Data
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! AccountCell
         
@@ -136,8 +138,13 @@ extension AccountListViewController: AccountListDelegate {
         
         return cell
     }
+    //MARK: Handle Selection Event
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailView = DetailViewController()
+        navigationController?.pushViewController(detailView, animated: true)
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 80
     }
 }
